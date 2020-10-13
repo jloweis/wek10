@@ -374,7 +374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4a3683b09f8feb4f84353d9a45a2c6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsPerCoin: 10
+  pointsPerCoin: 0
+  ScoreBoard: {fileID: 2146667270}
 --- !u!4 &435467673
 Transform:
   m_ObjectHideFlags: 0
