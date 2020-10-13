@@ -22,8 +22,9 @@ public class SCoreKeeper : MonoBehaviour
     }
 
 
-    void IncrementScore()
+    public void IncrementScore()
     {
         currentScore += pointsPerCoin;
+        Debug.Log(currentScore);
     }
 }

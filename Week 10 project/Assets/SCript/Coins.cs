@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Coins : MonoBehaviour
 {
-    private int currentScore;
-    public int pointsPerCoin;
-
-
+    public SCoreKeeper keeperOfTheScore;
     // Start is called before the first frame update
     void Start()
     {
-        currentScore = 0;
-
+        
     }
 
     // Update is called once per frame
@@ -21,9 +17,10 @@ public class NewBehaviourScript : MonoBehaviour
         
     }
 
-
-    void IncrementScore()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        currentScore += pointsPerCoin;
+        Debug.Log("hello there");
+        keeperOfTheScore.IncrementScore();
+        Destroy(gameObject);
     }
 }
